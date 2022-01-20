@@ -1,0 +1,42 @@
+.heading {
+    position: relative;
+    margin: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+
+    .text {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    span {
+        font-weight: bold;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 6rem;
+    }
+
+    .wrapper {
+        position: relative;
+
+        .offset {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, 0%);
+        }
+        .text {
+            white-space: nowrap;
+            color: $red;
+
+            transition-duration: 1s;
+        }
+    }
+}
