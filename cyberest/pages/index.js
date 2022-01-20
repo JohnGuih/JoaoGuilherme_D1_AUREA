@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export default function Home() {
   if (process.browser) {
@@ -302,7 +303,9 @@ export default function Home() {
               <div className="item"></div>
               <div className="item">
                 {/* easter egg do amogus */}
-                <img src="https://logosmarcas.net/wp-content/uploads/2021/08/Among-Us-Logo.png" width="150"
+                <Image src="https://logosmarcas.net/wp-content/uploads/2021/08/Among-Us-Logo.png" alt="easter egg"
+                  width={150}
+                  height={100}
                   style={{
                     'padding': "20px",
                     '-webkit-transform': 'scaleX(-1)',

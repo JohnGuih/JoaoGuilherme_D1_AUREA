@@ -58,6 +58,6 @@ if (process.browser) {
 
     setupAnimationCycle({
         timePerScreen: 2000,
-        exitDelay: 300 * 7,
+        exitDelay: 200 * 7,
     })
 }
